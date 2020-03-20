@@ -1,0 +1,2 @@
+# Skoli
+Allir áfangarnir mínir
