@@ -1,0 +1,30 @@
+h1{
+    border: 3px solid purple
+}
+.bordi {
+    border: 3px solid red;
+    padding: 1em 2em;
+    color: red;
+    margin-bottom: 2em;
+}
+.blues {
+    color: blue;
+    border: 4px dashed blue;
+    padding: 1em;
+}
+li {
+    border: 3px dashed green;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.inline li{
+    display: inline; 
+    color: red;
+    border: 3px dashed blue;
+}
+.inlineblock li {
+    display: inline-block;
+    border: 3px dashed red;
+    margin: 1em;
+}
+

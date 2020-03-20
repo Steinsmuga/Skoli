@@ -1,0 +1,44 @@
+body {
+    max-width: 60em;
+    border: 2px solid blue; /* width -style -color */
+    margin: 1em auto; /* top + bottom / left + right */
+    padding: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+ul li {
+    color: green;
+}
+a {
+    color: yellow;
+    background-color: lawngreen;
+}
+a:visited {
+    color: lawngreen;
+    background-color: yellow;
+}
+a:hover, a:active{
+    color:red;
+    background-color: black;
+}
+.ljod {
+    margin-left: 3em;
+}
+.ljod p {
+     font-style: italic;
+     color: darkblue;
+        
+
+}
+.ljod strong {
+    color: red;
+}
+.elvis h1, .elvis strong {
+    color:red;
+}
+.elvis i, .elvis blockquote {
+    color: blue;
+}

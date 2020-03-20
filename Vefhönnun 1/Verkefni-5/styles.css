@@ -1,0 +1,34 @@
+
+body {
+    display: grid;
+    grid-area: body;
+    line-height: 1.5em;
+    grid-template-areas:
+    "baklitir"
+    "texti"
+    "footer";
+    margin: 0;
+}
+.baklitir {
+    grid-area: baklitir;
+    background-color: darkblue;
+    grid-template-areas: 
+    "h1" "verkefni" "topnav" ;
+}
+.baklitir h1 {
+    grid-area: h1;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.verkefni {
+    grid-area: verkefni;
+}
+.topnav {
+    grid-area: topnav;
+}
+.texti {
+    grid-area: texti;
+}
+.footer {
+    grid-area: footer;
+}

@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    border: 1px solid;
+    padding: 1em;
+    width: 50%;
+    float: left;
+}
+.imgR {
+    float:right;
+    padding-left: .5em;
+    width: 60%;
+}
+.imgR img{
+    width: 100%;
+    height: auto;
+}
+.bigL{
+    float: left;
+    font-size: 3em;
+    padding: 0.24em .4em 0 .4em; /* top right bottom left (klukkurhringur) */
+}
+.group:before,
+.group:after {
+    content: "";
+    display:table;
+}
+.group:after {
+    clear: both;
+
+}
+.group {
+    clear: both;
+
+}
