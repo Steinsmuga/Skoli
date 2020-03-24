@@ -1,34 +1,197 @@
-
-body {
-    display: grid;
-    grid-area: body;
-    line-height: 1.5em;
-    grid-template-areas:
-    "baklitir"
-    "texti"
-    "footer";
+html{
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+a:hover, :active{
+    color: #f7a072;
+}
+body{
     margin: 0;
+    background: linear-gradient(to bottom, #3ab3bf, #0fa3b1, #0a6e77);
+    color: #444;
+    font: 400 1em/1.5 "verdana";
 }
-.baklitir {
-    grid-area: baklitir;
-    background-color: darkblue;
-    grid-template-areas: 
-    "h1" "verkefni" "topnav" ;
+.container{
+    margin: 0 auto;
+    max-width: 60em;
+    padding: 0;
+    margin-top: 1em;
 }
-.baklitir h1 {
-    grid-area: h1;
+header h1{
+    font-size: 3em;
+    margin: .5em 0;
+    text-align: left;
+    color:#facbb2;
+}
+.beige{
+    background: linear-gradient(to top, #F7D37E, #f6f1d3);
+    padding: 1em;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.beige2{
+    background: linear-gradient(to top, #F7D37E, #f6f1d3);
+    padding: 1em;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+}
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 3em;
+}
+.gap {
+    grid-gap: 4em;
+}
+.textcolor{
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 5em;
 }
-.verkefni {
-    grid-area: verkefni;
+/* .textcolor a{
+    color: white;
+} */
+h1, h2, h3, h4{
+    font-family: 'verdana';
 }
-.topnav {
-    grid-area: topnav;
+h1{
+    font-size: 2.5em;
 }
-.texti {
-    grid-area: texti;
+.verkefni{
+    margin-bottom: 1em;
+    text-align: right;
+    color: #facbb2;
 }
-.footer {
-    grid-area: footer;
+.topnav{
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4em;
+    font-size: 1.5em;
+    
+}
+.topnav a{
+    padding: 0 0 0 3em;
+    color:#facbb2;
+}
+.topnav :hover {
+    color: #f7a072;
+}
+.blockqoute{
+    background: linear-gradient(to top, rgb(248, 226, 175), #faf8eb);
+}
+.h3{
+    font-size: 1.5em;
+}
+.topbutt{
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: rgb(199, 0, 83);
+    font-size: 2.5em;
+    display: block;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 1.5em;
+    padding: 0 .2em;
+}
+.topbutt:active, .topbutt:hover{
+    background-color: #3ab3bf;
+}
+.margintop {
+    font-size: 2.5em;
+}
+.copy{
+    text-align: center;
+    color: #facbb2;
+}
+.innermenu{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    background-color: #3ab3bf;
+}
+.innermenu a {
+    border-width: 0 1px 0 0;
+    color: whitesmoke;
+}
+.innermenu a:last-child{
+    border: none;
+}
+.innermenu a:active, .innermenu a:hover{
+    background-color: #12a3b1;
+
+}
+.verkefnisimi {
+    display: none;
+}
+footer h4, nav, a {
+    color: #facbb2;
+}
+
+.copy {
+    color: #facbb2;
+}
+.efst {
+    color: #3ab3bf;
+}
+@media (max-width: 600px) {
+    .menucontainer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .col-sm-1{
+        grid-template-columns: 1fr;
+    }
+    .innermenu{
+        background-color: #3ab3bf;
+        flex-flow: column;
+        display: flex;
+        justify-content: center;
+    }
+    .innermenu a{
+        display: block;
+        color: #facbb2;
+        text-decoration: none;
+        text-align: center;
+        padding: .4em 1.2em;
+        border: 1px solid white;
+        border-width: 0 0 1px 0;
+    }
+    .topbutt{
+        background-color: #fff;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: #0064CE;
+        font-size: 1.5em;
+        display: block;
+        position: fixed;
+        bottom: .5em;
+        right: .5em;
+        width: 1.5em;
+        padding: 0 .2em;
+    
+    }
+    .verkefni {
+        display: none;
+    }
+    .verkefnisimi {
+        display: block;
+        text-align: right;
+        color: #facbb2;
+        padding-right: 8px;
+    }
+    .topnav {
+        padding-right: 8px;
+    }
 }
