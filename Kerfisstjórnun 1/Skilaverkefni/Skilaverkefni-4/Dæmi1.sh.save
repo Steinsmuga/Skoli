@@ -1,0 +1,38 @@
+echo "ibase=2; obase=16; $tviunda" | bc
+#!/bin/bash
+echo "Úr hvaða kerfi vilt þú breyta?:"
+echo "1 - Tvíunda"
+echo "2 - Áttunda"
+echo "3 - Tuga"
+echo "4 - Sextánda"
+read -p "Veldu aðgerð:" kerfiur
+case $kerfiur in
+	1)
+        	read -p "Sláðu inn tölu í tvíundarkerfinu:" tviunda
+		;;
+	2)
+		read -p "Sláðu inn tölu í áttundakerfinu:" attunda
+		;;
+	3)
+		read -p "Sláðu inn tölu í tugakerfinu:" tuga
+		;;
+	4)
+		read -p "Sláðu inn tölu í sextándakerfinu:" sextanda
+		;;
+	*)
+		read -p "Rangt val"
+esac
+echo "Í hvaða kerfi vilt þú breyta í?:"
+echo "1 - Tvíunda"
+echo "2 - Áttunda"
+echo "3 - Tuga"
+echo "4 - Sextánda"
+read -p "Veldu aðgerð:" kerfii
+#sextánda í tvíunda og öfugt
+if [ $kerfiur == 4 ] && [ $kerfii == 1 ]
+then
+	echo "base=16; ibase=16; $sextanda" | bc
+elif [ $kerfiur == 1 ] && [ $kerfii == 4 ]
+then
+	echo "obase=16; ibase=2; $tviunda" | bc
+fi
