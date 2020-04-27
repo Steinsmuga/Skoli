@@ -1,0 +1,75 @@
+html{
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+.logo img{
+    width:10em;
+    
+}
+.logo {
+    grid-area:logo;
+}
+
+.fyrisogn {
+    grid-area: sogn;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    justify-items: center;
+    margin:auto;
+}
+  
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content:space-evenly;
+}
+  
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+  
+
+.main {
+    margin-top: 30px; 
+} 
+
+body {
+
+}
+.forsida {
+    display: grid;
+    grid-template-areas:
+     "logo" "sogn" ;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    background-color: #979DAC;
+    /* border-radius: 15px; */
+
+    margin: 0 auto;
+    padding: 20px;
+}
+.myndvinnsla {
+    display: grid;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #979DAC;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 80em;
+    margin-top: 1em;
+}
