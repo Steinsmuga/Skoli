@@ -1,0 +1,199 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v13/ahcfv8qz1zt6hCC5G4F_P4ASlUaYpnLl.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v13/ahcfv8qz1zt6hCC5G4F_P4ASlU-YpnLl.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek-ext */
+  @font-face {
+    font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v13/ahcfv8qz1zt6hCC5G4F_P4ASlUeYpnLl.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v13/ahcfv8qz1zt6hCC5G4F_P4ASlUiYpnLl.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v13/ahcfv8qz1zt6hCC5G4F_P4ASlUWYpnLl.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v13/ahcfv8qz1zt6hCC5G4F_P4ASlUuYpg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Didact Gothic"
+
+}
+body {
+    background-image: url(img/bakgrunnur.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+
+}
+h1, p,h2 {
+    color: white;
+}
+.logo {
+    display: grid;
+    width: 50%;
+    margin: auto;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.topnav  {
+    display: grid;
+    font-size: 24px;
+    width: 180px;
+    margin-left: 87%;
+    position: fixed;
+
+}
+.topnav li {
+    margin-top: 3px;
+
+    border: 2px solid black;
+    text-align: center;
+    list-style-type: none;
+    background-color: #c7c7c7;
+
+}
+.topnav li:hover {
+    border: 2px solid white;
+    background-color: #44a11c;
+}
+.topnav a {
+    color: black;
+}
+.topnav a:hover {
+    color: White;
+}
+
+.about {
+    margin: 60px;
+
+    padding: 10px;
+    padding-top: 5px;
+}
+.about h2 {
+    font-size: 40px;
+}
+.trailer {
+    display: grid;
+
+    margin: 60px;
+    align-items: center;
+}
+.trailer iframe {
+    padding: ;
+    height: 720px;
+}
+
+section {
+    display: grid;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    border: 4px solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-image: url(img/stone.jpg);
+    background-size: 80px;
+}
+section h2, h3 {
+    text-align: center;
+}
+p {
+    font-size: 28px;
+
+
+}
+
+.daemi1 {
+    display: grid;
+    grid-template-areas:
+    "h2 h2 h2"
+    "ex1 ex2 ex3";
+    margin: auto;
+}
+.daemi1 div {
+    border: 2px solid rgb(187, 187, 187);
+    background-image:url(img/ull.jpg);
+    background-size: 800px;
+    
+    border-radius: 15px;
+    width: 410px;
+    height: auto;
+    margin: 15px;
+    padding: 5px;
+    padding-bottom: 15px;;
+    text-align: center;
+}
+.daemi1 img {
+    width: 370px;;
+    height: auto;
+    border-radius: 10px;
+
+}
+h3 {
+    font-size: 22px;
+}
+.daemi1 h2 {
+    grid-area: h2;
+}
+.ex1 {
+    grid-area: ex1;
+}
+.ex2 {
+    grid-area: ex2;
+}
+.ex3 {
+    grid-area: ex3;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: grey;
+}
