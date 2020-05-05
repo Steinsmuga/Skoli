@@ -53,7 +53,14 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 a {
+    color: #fdaf07;
+    text-shadow: 2px 2px #946500de;
     text-decoration: none;
+    
+}
+a:hover, a:hover {
+    color: blue;
+    text-shadow: 2px 2px  blue;
 }
 
 html {
@@ -64,13 +71,15 @@ html {
 body {
     background-image: url(img/bakgrunnur.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
+
     
     
 
 }
 h1, p,h2 {
     color: white;
+    text-shadow: 2px 2px #000000de;
+
 }
 .logo {
     display: grid;
@@ -78,14 +87,14 @@ h1, p,h2 {
     margin: auto;
     height: auto;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 1%;
 
 }
 .topnav  {
-    display: grid;
+    display: flex;
     font-size: 24px;
     width: 180px;
-    margin-left: 87%;
+    margin: 0 auto 0 87%;
     position: fixed;
 
 }
@@ -98,42 +107,49 @@ h1, p,h2 {
     background-color: #c7c7c7;
 
 }
-.topnav li:hover {
+.topnav li:hover, li:active {
     border: 2px solid white;
     background-color: #44a11c;
 }
 .topnav a {
     color: black;
+    padding: 3px 10px;
+    text-decoration: none;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.459);
 }
-.topnav a:hover {
+.topnav a:hover, .topnav a:hover {
     color: White;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.459);
 }
 
 .about {
-    margin: 60px;
-
+    margin: 10px 4%;
     padding: 10px;
-    padding-top: 5px;
+
 }
 .about h2 {
     font-size: 40px;
 }
-.trailer {
-    display: grid;
 
-    margin: 60px;
-    align-items: center;
+.trailer{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+.trailer iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.trailer iframe {
-    padding: ;
-    height: 720px;
-}
-
-section {
-    display: grid;
+.minecraft {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 70%;
-    margin: auto;
+    margin: 10px auto;
     border: 4px solid;
     border-radius: 20px;
     padding: 20px;
@@ -141,21 +157,46 @@ section {
     background-image: url(img/stone.jpg);
     background-size: 80px;
 }
+.redstone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 10px auto;
+    border: 4px solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-image: url(img/redstone.jpg);
+    background-size: 80px; 
+}
 section h2, h3 {
     text-align: center;
 }
 p {
     font-size: 28px;
-
-
+    padding: 20px 5px;
+    margin: auto 10px;
+}
+li {
+    list-style-type: none;
+}
+.redstone p {
+    padding: 20px;
 }
 
-.daemi1 {
+/* .daemi1 {
     display: grid;
     grid-template-areas:
     "h2 h2 h2"
     "ex1 ex2 ex3";
     margin: auto;
+} */
+.daemi1 {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
 }
 .daemi1 div {
     border: 2px solid rgb(187, 187, 187);
@@ -163,16 +204,44 @@ p {
     background-size: 800px;
     
     border-radius: 15px;
-    width: 410px;
+    width: 50%;
     height: auto;
-    margin: 15px;
+    margin: 1%;
     padding: 5px;
     padding-bottom: 15px;;
     text-align: center;
 }
 .daemi1 img {
-    width: 370px;;
+    width: 90%;
     height: auto;
+    border: 3px solid rgb(221, 221, 221);
+    border-radius: 10px;
+
+}
+.daemi2 {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+.daemi2 div {
+    border: 2px solid rgb(187, 187, 187);
+    background-image:url(img/ull.jpg);
+    background-size: 800px;
+    
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    margin: 1%;
+    padding: 5px;
+    padding-bottom: 15px;;
+    text-align: center;
+}
+
+.daemi2 img {
+    width: 90%;
+    height: auto;
+    border: 3px solid rgb(221, 221, 221);
     border-radius: 10px;
 
 }
@@ -182,6 +251,7 @@ h3 {
 .daemi1 h2 {
     grid-area: h2;
 }
+
 .ex1 {
     grid-area: ex1;
 }
@@ -191,9 +261,159 @@ h3 {
 .ex3 {
     grid-area: ex3;
 }
+.daemi2 h2 {
+    grid-area: h22;
+}
+.ex4 {
+    grid-area: ex4;
+}
+.ex5 {
+    grid-area: ex5;
+}
+.ex6 {
+    grid-area: ex6;
+}
 
 footer {
-    height: 200px;
-    width: 100%;
-    background-color: grey;
+    color: white;
+    display: grid;
+    width: 71%;
+    margin: auto;
+    border: 4px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    align-content: stretch;
+    margin-bottom: 20px;
+    background-image: url(img/obsidian.png);
+    background-size: 120px;
+    grid-template-columns: repeat(2, 1fr);
+   
+    
+}
+footer div {
+    margin:auto;
+    
+}
+footer a {
+    color: white;
+}
+footer h3 {
+    color: white;
+}
+footer li {
+    list-style-type: disc;
+}
+.heimild {
+    grid-area: heimild;
+}
+.uppl {
+    grid-area: uppl;
+}
+.copy {
+    text-align: center;
+    margin-top: auto;
+    margin: auto;
+}
+ @media screen and (max-width: 1280px) {
+
+    .topnav  {
+        width: 180px;
+        margin: 1% auto;
+        position: relative;
+    }
+
+    .minecraft {
+        width: 70%;
+        margin: auto;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+    }
+    .minecraft div {
+        margin: 0px auto auto auto;
+    }
+    .redstone {
+        width: 70%;
+        margin: auto;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+    }
+    .daemi1 div, .daemi2 div {
+        width: auto;
+        margin-bottom: 2%;
+        margin: 0 1% 0% 1%;
+    }
+    p {
+        margin: 10px 30px;
+        font-size: 24px;
+    }
+    .daemi2 div {
+        margin-bottom: 2%;
+    }
+    h2 {
+        margin-top: 40px;
+    }
+    footer {
+        width: 73%;
+    }   
+    
+}
+@media screen and (max-width: 960px) {
+    body {
+        background-attachment: fixed;
+    }
+    .daemi1, .daemi2 {
+        flex-direction: column;
+        
+    }
+    
+    .daemi1 div {
+        margin-bottom: 2%;
+    }
+    footer {
+        width: 74% 
+    }
+} 
+@media screen and (max-width: 760px) {
+    p {
+        margin: 10px 4% ;
+        font-size: 24px;
+    }
+    footer {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 600px) {
+    p {
+        margin: 2%;
+        padding: 0;
+    }
+    .about {
+        padding: 0px;
+    }
+    footer {
+        width: 76%;
+    } 
+   
+}
+@media screen and (max-width: 480px) {
+    .minecraft {
+        width: 85%;
+    }
+    .redstone {
+        width: 85%;
+    }
+    footer {
+        width: 91%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .minecraft, .redstone {
+        width: 80%;   
+    }
+    footer  {
+        width: 91%;
+        margin: 0;
+    }
+
+
 }
